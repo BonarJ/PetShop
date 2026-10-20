@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pawtopia — Pet Shop, Grooming & Klinik Sahabat Anabul</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Menghubungkan ke file CSS eksternal -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Promo Bar -->
+  <div class="topbar">
+    <span>PROMO BARU</span> Diskon 25% Paket Spa & Grooming Pertama Anabul Anda!
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">🐾</div>
+        Paw<span>topia</span>
+      </a>
+
+      <!-- Pure CSS Checkbox Toggle for Mobile -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle-input" />
+      <label for="menu-toggle" class="menu-toggle-label" aria-label="Buka Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav-links">
+        <a href="#beranda">Beranda</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#produk">Produk</a>
+        <a href="#promo">Grooming</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#produk" class="btn btn-outline">Belanja</a>
+        <a href="#modal-booking" class="btn btn-primary">Booking Grooming</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="beranda" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge">✨ Pet Shop & Care Terpercaya #1</div>
+        <h1 class="hero-title">
+          Semua Kebutuhan <span class="highlight">Anabul Kesayangan</span> dalam Satu Tempat
+        </h1>
+        <p class="hero-desc">
+          Mulai dari makanan organik bergizi, kasur ortopedi super empuk, hingga layanan grooming spa dan dokter hewan berpengalaman dengan penuh kasih sayang.
+        </p>
+        <div class="hero-cta">
+          <a href="#produk" class="btn btn-primary">Lihat Katalog Produk →</a>
+          <a href="#modal-booking" class="btn btn-outline">Jadwalkan Spa Anabul</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3>12.500+</h3>
+            <p>Anabul Bahagia</p>
+          </div>
+          <div class="stat-item">
+            <h3>100%</h3>
+            <p>Produk Original & Alami</p>
+          </div>
+          <div class="stat-item">
+            <h3>4.9 / 5</h3>
+            <p>Rating Pelanggan</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="floating-badge top-left">
+            <div class="badge-icon">🛁</div>
+            <div>
+              <div>Grooming Bersertifikat</div>
+              <small class="badge-subtext">Aman & Bebas Stres</small>
+            </div>
+          </div>
+
+          <!-- Ilustrasi SVG Kucing & Anjing (Bisa diganti <img src="hero.jpg" alt="Pet Shop">) -->
+          <svg class="hero-illustration" viewBox="0 0 360 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="180" cy="155" r="120" fill="#FFFBF5" />
+            <!-- Dog Illustration -->
+            <ellipse cx="135" cy="185" rx="52" ry="62" fill="#F4B942" />
+            <circle cx="135" cy="115" r="44" fill="#F6C762" />
+            <ellipse cx="95" cy="112" rx="14" ry="28" transform="rotate(15 95 112)" fill="#D99326" />
+            <ellipse cx="175" cy="112" rx="14" ry="28" transform="rotate(-15 175 112)" fill="#D99326" />
+            <circle cx="120" cy="110" r="5.5" fill="#1F2421" />
+            <circle cx="150" cy="110" r="5.5" fill="#1F2421" />
+            <ellipse cx="135" cy="123" rx="9" ry="6.5" fill="#1F2421" />
+            <path d="M128 134 Q135 144 142 134" stroke="#E06D53" stroke-width="4" stroke-linecap="round" fill="none" />
+            <!-- Cat Illustration -->
+            <ellipse cx="230" cy="195" rx="44" ry="52" fill="#8B9892" />
+            <circle cx="230" cy="135" r="36" fill="#9CA8A2" />
+            <polygon points="200,115 198,82 222,102" fill="#8B9892" />
+            <polygon points="260,115 262,82 238,102" fill="#8B9892" />
+            <circle cx="217" cy="132" r="4.5" fill="#1F2421" />
+            <circle cx="243" cy="132" r="4.5" fill="#1F2421" />
+            <polygon points="226,140 234,140 230,145" fill="#E06D53" />
+          </svg>
+
+          <div class="floating-badge bottom-right">
+            <div class="badge-icon">🩺</div>
+            <div>
+              <div>Konsultasi Vet Gratis</div>
+              <small class="badge-subtext">Setiap Akhir Pekan</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="layanan" class="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-sage">Layanan Unggulan</div>
+        <h2 class="section-title">Perawatan Penuh Kasih untuk Sahabat Berbulu</h2>
+        <p class="section-desc">Fasilitas bersih, peralatan steril, dan tim profesional yang memahami karakter setiap anjing dan kucing.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon">🛁</div>
+          <h3>Bubble Spa & Grooming</h3>
+          <p>Mandi air hangat dengan sampo hipoalergenik organik, potong kuku, pembersihan telinga, dan styling bulu.</p>
+          <div class="service-price">
+            <span>Mulai Rp 85.000</span>
+            <a href="#modal-booking">Pesan →</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">🩺</div>
+          <h3>Klinik & Vaksinasi</h3>
+          <p>Pemeriksaan kesehatan rutin, vaksinasi lengkap, pemberian obat cacing, serta konsultasi nutrisi bersama dokter hewan.</p>
+          <div class="service-price">
+            <span>Mulai Rp 120.000</span>
+            <a href="#modal-booking">Pesan →</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">🏨</div>
+          <h3>Pet Hotel & Daycare</h3>
+          <p>Penginapan ber-AC dengan kamar privat, area bermain indoor, pantauan CCTV 24 jam, dan laporan video harian.</p>
+          <div class="service-price">
+            <span>Mulai Rp 110.000/mlm</span>
+            <a href="#modal-booking">Pesan →</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">🛵</div>
+          <h3>Antar-Jemput & Delivery</h3>
+          <p>Gratis pengantaran makanan dan pasir kucing ke rumah Anda, serta layanan jemput anabul untuk jadwal grooming.</p>
+          <div class="service-price">
+            <span>Gratis Ongkir &lt; 5 km</span>
+            <a href="#produk">Belanja →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Catalog with Pure CSS Filter -->
+  <section id="produk" class="products">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Katalog Pilihan</div>
+        <h2 class="section-title">Produk Terbaik untuk Kesehatan & Kebahagiaan</h2>
+        <p class="section-desc">Klik kategori di bawah ini untuk memfilter produk secara instan (menggunakan CSS murni).</p>
+      </div>
+
+      <!-- Radio Buttons for CSS-only Filtering -->
+      <input type="radio" name="filter" id="tab-all" class="filter-input" checked />
+      <input type="radio" name="filter" id="tab-food" class="filter-input" />
+      <input type="radio" name="filter" id="tab-bed" class="filter-input" />
+      <input type="radio" name="filter" id="tab-toy" class="filter-input" />
+
+      <div class="filter-tabs">
+        <label for="tab-all" class="filter-label">Semua Produk</label>
+        <label for="tab-food" class="filter-label">🍖 Makanan & Vitamin</label>
+        <label for="tab-bed" class="filter-label">🛏️ Kasur & Aksesoris</label>
+        <label for="tab-toy" class="filter-label">🧶 Mainan Interaktif</label>
+      </div>
+
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <article class="product-card cat-food">
+          <div class="product-thumb">
+            <span class="product-tag sale">Terlaris</span>
+            <span class="product-emoji">🥣</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Makanan Organik</div>
+            <h3 class="product-title">Salmon & Sweet Potato Grain-Free Kibble (2 kg)</h3>
+            <div class="product-rating">★★★★★ <span>(142 ulasan)</span></div>
+            <div class="product-footer">
+              <div class="price">
+                <del>Rp 210.000</del>
+                Rp 175.000
+              </div>
+              <a href="#modal-booking" class="btn-cart">+ Pesan</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card cat-bed">
+          <div class="product-thumb">
+            <span class="product-tag">Baru</span>
+            <span class="product-emoji">🛋️</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Kasur & Aksesoris</div>
+            <h3 class="product-title">Cloud Plush Orthopedic Donut Pet Bed</h3>
+            <div class="product-rating">★★★★★ <span>(98 ulasan)</span></div>
+            <div class="product-footer">
+              <div class="price">
+                <del>Rp 340.000</del>
+                Rp 289.000
+              </div>
+              <a href="#modal-booking" class="btn-cart">+ Pesan</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card cat-toy">
+          <div class="product-thumb">
+            <span class="product-tag">Eco-Friendly</span>
+            <span class="product-emoji">🧶</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Mainan Interaktif</div>
+            <h3 class="product-title">Natural Cotton Rope & Wooden Puzzle Toy</h3>
+            <div class="product-rating">★★★★★ <span>(76 ulasan)</span></div>
+            <div class="product-footer">
+              <div class="price">
+                Rp 65.000
+              </div>
+              <a href="#modal-booking" class="btn-cart">+ Pesan</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card cat-food">
+          <div class="product-thumb">
+            <span class="product-tag sale">Hemat 15%</span>
+            <span class="product-emoji">🐟</span>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Makanan & Vitamin</div>
+            <h3 class="product-title">Creamy Tuna & Collagen Cat Treats (Isi 20)</h3>
+            <div class="product-rating">★★★★★ <span>(215 ulasan)</span></div>
+            <div class="product-footer">
+              <div class="price">
+                <del>Rp 95.000</del>
+                Rp 79.000
+              </div>
+              <a href="#modal-booking" class="btn-cart">+ Pesan</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo Grooming Banner -->
+  <section id="promo" class="promo-banner">
+    <div class="container">
+      <div class="promo-box">
+        <div>
+          <div class="badge badge-glass">✨ Paket Spesial Bulan Ini</div>
+          <h2>Paket Lengkap Royal Grooming & Cek Kesehatan</h2>
+          <p>Manjakan anjing atau kucing kesayangan Anda dengan perawatan menyeluruh dari ujung telinga hingga ujung ekor oleh groomer berpengalaman.</p>
+          <div class="promo-checklist">
+            <div>✅ Mandi Busa Aromaterapi</div>
+            <div>✅ Styling & Rapikan Bulu</div>
+            <div>✅ Pembersihan Telinga & Kuku</div>
+            <div>✅ Cek Dokter Hewan Gratis</div>
+          </div>
+          <a href="#modal-booking" class="btn btn-primary">Ambil Promo Sekarang</a>
+        </div>
+
+        <div class="promo-card-visual">
+          <p class="promo-label">Diskon Pelanggan Baru</p>
+          <div class="promo-discount">25% OFF</div>
+          <p class="promo-code">Gunakan kode: <strong>PAWHAPPY25</strong> saat reservasi jadwal.</p>
+          <span class="promo-pill">Berlaku Senin – Jumat</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimoni" class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-sage">Cerita Pelanggan</div>
+        <h2 class="section-title">Dipercaya oleh Ribuan Pemilik Anabul</h2>
+      </div>
+
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Biasanya Mochi selalu takut kalau dibawa grooming, tapi di Pawtopia kakaknya sabar banget. Pulang-pulang bulunya halus dan wangi berhari-hari!"</p>
+          <div class="testi-author">
+            <div class="avatar">AN</div>
+            <div class="author-info">
+              <h4>Amanda Nabila</h4>
+              <span>Pemilik Kucing British Shorthair</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Kibble salmon organiknya cocok banget buat Golden Retriever saya yang punya alergi kulit. Pengiriman cepat dan kemasannya selalu rapi."</p>
+          <div class="testi-author">
+            <div class="avatar">RP</div>
+            <div class="author-info">
+              <h4>Raka Pratama</h4>
+              <span>Pemilik Anjing Golden Retriever</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Pet Hotel-nya bersih dan luas! Selama ditinggal mudik 4 hari, setiap pagi dan sore selalu dikirimi video anabul lagi main."</p>
+          <div class="testi-author">
+            <div class="avatar">DS</div>
+            <div class="author-info">
+              <h4>Dina Saraswati</h4>
+              <span>Pemilik 2 Kucing Persia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section (Pure HTML5 Details/Summary) -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Tanya Jawab</div>
+        <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>Apakah harus booking terlebih dahulu sebelum grooming?</summary>
+          <p>Kami menyarankan reservasi minimal H-1 agar anabul Anda tidak perlu mengantre lama dan langsung ditangani oleh groomer kami begitu tiba.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Apa saja syarat menitipkan hewan di Pet Hotel?</summary>
+          <p>Hewan wajib dalam kondisi sehat, bebas kutu/jamur akut, serta sudah mendapatkan vaksinasi dasar. Anda juga dapat membawa makanan atau mainan favoritnya sendiri.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Apakah melayani pengantaran produk di hari yang sama (Same-Day)?</summary>
+          <p>Ya, pesanan produk yang masuk sebelum pukul 16.00 WIB akan dikirim di hari yang sama menggunakan kurir toko kami (gratis ongkir hingga radius 5 km).</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pure CSS Booking Modal (:target) -->
+  <div id="modal-booking" class="modal-overlay">
+    <div class="modal-box">
+      <a href="#beranda" class="modal-close" aria-label="Tutup">✕</a>
+      <div class="badge">📅 Reservasi Online</div>
+      <h3 class="modal-title">Jadwalkan Kunjungan Anabul</h3>
+      <p class="modal-subtitle">Isi data singkat di bawah ini, tim kami akan mengirimkan konfirmasi via WhatsApp.</p>
+
+      <form action="#beranda">
+        <div class="form-group">
+          <label for="nama">Nama Pemilik</label>
+          <input type="text" id="nama" placeholder="Contoh: Budi Santoso" required />
+        </div>
+        <div class="form-group">
+          <label for="wa">Nomor WhatsApp</label>
+          <input type="tel" id="wa" placeholder="0812-xxxx-xxxx" required />
+        </div>
+        <div class="form-group">
+          <label for="layanan-pilih">Pilih Layanan / Produk</label>
+          <select id="layanan-pilih">
+            <option>Bubble Spa & Grooming (Diskon 25%)</option>
+            <option>Konsultasi Dokter Hewan & Vaksin</option>
+            <option>Pet Hotel & Daycare</option>
+            <option>Pesan Antar Produk Pet Shop</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Kirim Reservasi</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="#" class="logo footer-logo">
+            <div class="logo-icon">🐾</div>
+            Paw<span>topia</span>
+          </a>
+          <p>Pet shop modern, salon grooming bebas stres, dan klinik sahabat anabul kesayangan keluarga Anda.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#layanan">Layanan Kami</a></li>
+            <li><a href="#produk">Katalog Produk</a></li>
+            <li><a href="#promo">Promo Grooming</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Jam Operasional</h4>
+          <ul>
+            <li>Senin – Jumat: 08.00 – 21.00</li>
+            <li>Sabtu – Minggu: 08.00 – 22.00</li>
+            <li>Klinik Vet: Setiap Hari</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kontak & Lokasi</h4>
+          <ul>
+            <li>📍 Jl. Kemang Raya No. 45, Jakarta Selatan</li>
+            <li>📞 WhatsApp: 0812-3456-7890</li>
+            <li>✉️ halo@pawtopia.id</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 Pawtopia Pet Shop & Care. Dibuat dengan HTML5 & CSS3 Murni.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
